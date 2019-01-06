@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.container:not(header) {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #f1c40f;
+  border-radius: 2px;
+  padding: 10px 10px;
+  font-weight: 900;
+  border: none;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background: orange;
+  transition: background-color 1s;
+}
+
+/* header */
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  position: fixed;
+  background: #eee;
+  top: 0;
+  padding: 0 3%;
+  width: 100%;
+}
+
+#logo {
+  margin-left: -25px;
+}
+
+#menu {
+  display: flex;
+}
+
+#menu li:not(:first-child):not(:last-child) {
+  margin: 0 30px;
+}
+
+/* hero */
+
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#hero h2 {
+  margin-bottom: 20px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  padding: 5px;
+  width: 300px;
+  font-size: 1em;
+}
+
+#submit {
+  margin-top: 15px;
+}
+
+/* features */
+
+#features .container {
+  display: grid;
+  grid-template: repeat(3, 125px) / 200px 1fr;
+  margin-top: 30px;
+}
+
+#features .icon, #features .desc {
+  justify-self: center;
+  margin: auto 0;
+}
+
+#features .icon {
+  color: darkorange;
+}
+
+/* how it works */
+
+#how-it-works .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+iframe {
+  width: 560px;
+}
+
+/* pricing */
+
+#pricing .container {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+#pricing .instruments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  width: calc(100% / 3);
+}
+
+/* #pricing .instruments:nth-child(2) {
+  margin: 0 10px 0 10px;
+} */
+
+#pricing .level {
+  background: #ddd;
+  width: 100%;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#pricing h2 {
+  margin-top: 15px;
+}
+
+#pricing ul, #pricing button {
+  margin: 15px 0;
+}
+
+/* footer */
+
+footer .container {
+  margin-top: 30px;
+  background: #ddd;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer li:not(:first-child):not(:last-child) {
+  margin: 0 20px;
+}
+
+footer span {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
