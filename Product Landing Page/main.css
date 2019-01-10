@@ -30,9 +30,9 @@ a {
   background: #f1c40f;
   border-radius: 2px;
   padding: 10px 10px;
+  font: inherit;
   font-weight: 900;
   border: none;
-  font-size: 1em;
 }
 
 .btn:hover {
@@ -46,7 +46,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 75px;
+  min-height: 75px;
   position: fixed;
   background: #eee;
   top: 0;
@@ -62,8 +62,8 @@ header .container {
   display: flex;
 }
 
-#menu li:not(:first-child):not(:last-child) {
-  margin: 0 30px;
+#menu li:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* hero */
@@ -73,7 +73,7 @@ header .container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  min-height: 200px;
   margin-top: 50px;
 }
 
@@ -90,7 +90,7 @@ header .container {
 #email {
   padding: 5px;
   width: 300px;
-  font-size: 1em;
+  font: inherit;
 }
 
 #submit {
@@ -105,7 +105,8 @@ header .container {
   margin-top: 30px;
 }
 
-#features .icon, #features .desc {
+#features .icon,
+#features .desc {
   justify-self: center;
   margin: auto 0;
 }
@@ -135,19 +136,12 @@ iframe {
 }
 
 #pricing .instruments {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-grow: 1;
   text-align: center;
   margin: auto 10px;
   border: 1px solid #000;
   border-radius: 3px;
-  width: calc(100% / 3);
 }
-
-/* #pricing .instruments:nth-child(2) {
-  margin: 0 10px 0 10px;
-} */
 
 #pricing .level {
   background: #ddd;
@@ -161,7 +155,8 @@ iframe {
   margin-top: 15px;
 }
 
-#pricing ul, #pricing button {
+#pricing ul,
+#pricing button {
   margin: 15px 0;
 }
 
@@ -178,8 +173,8 @@ footer ul {
   justify-content: flex-end;
 }
 
-footer li:not(:first-child):not(:last-child) {
-  margin: 0 20px;
+footer li:not(:last-child) {
+  margin-right: 20px;
 }
 
 footer span {
